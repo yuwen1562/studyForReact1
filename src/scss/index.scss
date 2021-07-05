@@ -1,0 +1,142 @@
+$text-color: #929292;
+
+.flex-end {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.chartNoData-text {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 16px;
+}
+
+.chartAxisTitle {
+  font-size: 11px;
+  font-weight: 900;
+}
+
+.ant-carousel {
+  height: 300px;
+
+  .slick-slider {
+    .slick-list {
+      .slick-track {
+        .slick-slide {
+          .BarChartHeight {
+            height: 250px;
+          }
+        }
+      }
+    }
+
+    .slick-dots {
+      li {
+        width: 8px;
+        height: 8px;
+        border: 2px solid $text-color;
+        border-radius: 50%;
+        margin: 0 6px;
+
+        button {
+          width: 8px;
+          height: 8px;
+          opacity: 0;
+        }
+      }
+
+      li.slick-active {
+        width: 8px;
+        background-color: $text-color;
+
+        button {
+          opacity: 0;
+        }
+      }
+    }
+
+    .slick-dots-bottom {
+      bottom: -50px;
+    }
+  }
+}
+
+.CostAnalysis {
+  .card {
+    border: 1px solid #dbdbdb;
+    border-radius: 20px !important;
+
+    .card-header {
+      color: $text-color;
+      border-bottom: unset !important;
+      background-color: unset;
+    }
+
+    .card-body {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+    .card-footer {
+      background-color: unset;
+      border-top: unset;
+    }
+  }
+
+  .costDistributed {
+    .monthTatolCost {
+      border: 1px solid $text-color;
+      max-width: 40%;
+
+      .value {
+        font-size: 40px;
+        font-weight: bolder;
+        text-align: center;
+        color: #000000;
+      }
+    }
+  }
+
+  .costTopTen {
+    .card {
+      .card-header {
+        input[type="radio"] {
+          display: none;
+
+          &:hover + label .unit,
+          &:active + label .unit {
+            color: #478699;
+            border: 1px solid #ffb908;
+            border-radius: 8px;
+          }
+
+          &:checked + label .unit {
+            color: #0e4b5e;
+            background-color: #ffb908;
+            border-radius: 8px;
+          }
+        }
+        label {
+          width: unset;
+          text-align: unset;
+          margin-bottom: unset;
+          z-index: 2;
+          cursor: pointer;
+
+          .unit {
+            padding: 0 10px;
+            margin: 0 0 0 10px;
+            color: #478699;
+          }
+        }
+      }
+    }
+  }
+}

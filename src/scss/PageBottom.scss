@@ -1,0 +1,12 @@
+$text-color: #929292;
+
+.pageBottom {
+  dt,
+  dd {
+    width: auto;
+  }
+
+  dd {
+    color: $text-color;
+  }
+}
